@@ -70,7 +70,7 @@ suite('Functional Tests', function () {
 
 const Browser = require('zombie');
 
-Browser.site = 'https://boilerplate-mochachai-tuow.onrender.com'; 
+Browser.site = 'http://0.0.0.0:3000'; 
 
 suite('Functional Tests with Zombie.js', function () {
   this.timeout(5000);
