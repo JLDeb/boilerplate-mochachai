@@ -81,12 +81,14 @@ suite('Functional Tests with Zombie.js', function () {
     return browser.visit('/', done);
   });
   
+  
+  });
+
   suite('Headless browser', function () {
     test('should have a working "site" property', function() {
       assert.isNotNull(browser.site);
     });
-  });
-
+    
   suite('"Famous Italian Explorers" form', function () {
     // #5
     test('Submit the surname "Colombo" in the HTML form', function (done) {
