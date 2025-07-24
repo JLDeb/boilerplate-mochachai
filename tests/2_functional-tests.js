@@ -70,7 +70,7 @@ suite('Functional Tests', function () {
 
 const Browser = require('zombie');
 
-Browser.site = 'https://boilerplate-mochachai-tuow.onrender.com'; 
+Browser.site = 'http://0.0.0.0:3000'; 
 
 const browser = new Browser();
 
@@ -81,13 +81,11 @@ suite('Functional Tests with Zombie.js', function () {
     return browser.visit('/', done);
   });
   
-  
-  });
-
   suite('Headless browser', function () {
     test('should have a working "site" property', function() {
       assert.isNotNull(browser.site);
     });
+  });
     
   suite('"Famous Italian Explorers" form', function () {
     // #5
